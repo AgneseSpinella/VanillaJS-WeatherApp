@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgba(143, 112, 112, 0.067);
+    background-image:url('https://source.unsplash.com/1600x900/?landscape,?nature,?water');
+}
+
+.card {
+    background: rgba(136, 107, 107, 0.911);
+    padding: 30px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 3px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search button {
+    margin: 5px;
+    border-radius: 25%;
+    border: none;
+    height: 2em;
+    width: 2em;
+    outline: none;
+}
+
+.search input {
+    border: none;
+    height: 2em;
+    padding:0 1em;
+    outline: none;
+    border-radius: 18px;
+}
