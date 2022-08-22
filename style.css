@@ -31,7 +31,9 @@ body {
     height: 2em;
     width: 2em;
     outline: none;
+    cursor: pointer;
 }
+
 
 .search input {
     border: none;
@@ -39,4 +41,5 @@ body {
     padding:0 1em;
     outline: none;
     border-radius: 18px;
+    width: calc(100% - 100px);
 }
