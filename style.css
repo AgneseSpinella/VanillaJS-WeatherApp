@@ -43,3 +43,7 @@ body {
     border-radius: 18px;
     width: calc(100% - 100px);
 }
+
+.description {
+    text-transform: capitalize;
+}
