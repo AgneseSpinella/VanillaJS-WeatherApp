@@ -46,4 +46,21 @@ body {
 
 .description {
     text-transform: capitalize;
+    margin-left: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.weather.loading {
+ visibility: hidden;
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Loading...";
+    color: white;
 }

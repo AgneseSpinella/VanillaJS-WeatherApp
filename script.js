@@ -14,9 +14,26 @@ let weather = {
         document.querySelector(".city").innerText = "Meteo a " + name;
         document.querySelector(".icon").src ="https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".description").innerText = description;
-        document.querySelector(".temp").innerText = temp + "K";
+        document.querySelector(".temp").innerText = temp + " K";
         document.querySelector(".humidity").innerText = "Umidità: " + humidity + "%";
-        document.querySelector(".speed").innerText = "Velocità del vento: " + speed + "km/h";
+        document.querySelector(".speed").innerText = "Velocità del vento: " + speed + " km/h";
+        document.querySelector(".weather").classList.remove("loading");
+        document.body.style.backgroundImage ="url('https://source.unsplash.com/1600x900/?" + name + "')"
 
+    },
+    search: function() {
+        this.fetchWeather(document.querySelector(".search-bar").value)
     }
 }
+
+document.querySelector(".search button").addEventListener("click", function() {
+    weather.search(); 
+} )
+
+document.querySelector(".search-bar").addEventListener("keyup",function() {
+    if (event.key == "Enter") {
+        weather.search();
+    }
+})
+
+weather.fetchWeather("Catania");
